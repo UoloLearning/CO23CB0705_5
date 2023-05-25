@@ -1,34 +1,29 @@
-# Example dictionary
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+my_dict = {
+    'first_name': 'Peter',
+    'last_name': 'Parker',
+    'age': 30, 
+    'city': 'New York',
+    'occupation':'teacher'
+}
 
-# Extract and delete a specific key
-key = 'age'
-value = my_dict[key]
-del my_dict[key]
-print("Extracted value:", value)
-print("Updated dictionary:", my_dict)
-
-# Extract and delete all keys
+# extract all the keys and print them
 extracted_keys = list(my_dict.keys())
-for key in extracted_keys:
-    del my_dict[key]
 print("Extracted keys:", extracted_keys)
-print("Updated dictionary:", my_dict)
 
-# Restore the original dictionary
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
-
-# Extract and delete all values
+# extract all the values and print them
 extracted_values = list(my_dict.values())
-my_dict.clear()
 print("Extracted values:", extracted_values)
+
+# remove a specific key
+removed_element = my_dict.pop('age')
+print("\nRemoved element:", removed_element)
 print("Updated dictionary:", my_dict)
 
-# Restore the original dictionary
-my_dict = {'name': 'John', 'age': 30, 'city': 'New York'}
+# remove last key
+my_dict.popitem()
+print("\nDictionary after removing last key:", my_dict)
 
-# Extract and delete all items
-extracted_items = list(my_dict.items())
+# delete all items
 my_dict.clear()
-print("Extracted items:", extracted_items)
-print("Updated dictionary:", my_dict)
+print("\nFinal Dictionary:", my_dict)
+
