@@ -1,4 +1,4 @@
-my_dict = {
+emp_data = {
     'first_name': 'Paul',
     'last_name': 'Parker',
     'age': 30, 
@@ -7,23 +7,23 @@ my_dict = {
 }
 
 # extract all the keys and print them
-extracted_keys = list(my_dict.keys())
+extracted_keys = list(emp_data.keys())
 print("Extracted keys:", extracted_keys)
 
 # extract all the values and print them
-extracted_values = list(my_dict.values())
+extracted_values = list(emp_data.values())
 print("Extracted values:", extracted_values)
 
 # remove a specific key
-removed_element = my_dict.pop('age')
+removed_element = emp_data.pop('age')
 print("\nRemoved element:", removed_element)
-print("Updated dictionary:", my_dict)
+print("Updated dictionary:", emp_data)
 
 # remove last key
-my_dict.popitem()
-print("\nDictionary after removing last key:", my_dict)
+emp_data.popitem()
+print("\nDictionary after removing last key:", emp_data)
 
 # delete all items
-my_dict.clear()
-print("\nFinal Dictionary:", my_dict)
+emp_data.clear()
+print("\nFinal Dictionary:", emp_data)
 
